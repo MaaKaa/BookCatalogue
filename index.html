@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My books</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Books</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view-books">View books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#add-book">Add book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">My Books</h1>
+                    <p class="lead">Welcome to my library</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- View Books section -->
+    <section class="py-5" id="view-books">
+        <div class="container">
+            <h2 class="font-weight-light">View books</h2>
+            <p>Click on the book's title to display the details</p>
+            <div class="row">
+                <div class="col-3">
+                    <ul class="list-group" id="bookList">
+                    <!--- Book List model: -->
+                        <!---<li class="list-group-item bookRecord" data-id=book.id> book.title
+                                <div class="bookDescription">
+                                    <p>ISBN: " + book.isbn + "</p>").append("<p> Author: " + book.author + "</p>"
+                                    <button btn btn-primary delBtn> Delete </button>" </div> 
+                            </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Book section -->
+    <section class="py-5" id="add-book">
+        <div class="container">
+            <h2 class="font-weight-light">Add book</h2>
+            <p>Fill in the form to add a new book</p>
+
+            <form id="add-book-form">
+                <div class="form-group row">
+                    <label for="isbn" class="col-sm-3 col-form-label">ISBN</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" placeholder="Enter ISBN" id="isbn">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="title" class="col-sm-3 col-form-label">Title</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter title" id="title">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="author" class="col-sm-3 col-form-label">Author</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter author" id="author">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="publisher" class="col-sm-3 col-form-label">Publisher</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter publisher" id="publisher">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="type" class="col-sm-3 col-form-label">Type</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter type" id="type">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-9">
+                        <button type="submit" class="btn btn-primary" id="saveBtn">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="font-weight-light" id="view-books">Contact</h2>
+            <p>If you'd like to borrow a book, mail me at:</p>
+            <p><a href="mailto:marzena.kaa@gmail.com"> marzena.kaa@gmail.com </a></p>
+        </div>
+    </section>
+
+</body>
+
+</html>

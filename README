@@ -1,0 +1,36 @@
+
+Frontend book catalogue app, using REST services. 
+
+How it works?
+    • Client implements homepage only.
+    • Homepage displays the list of all books saved in the system via Ajax (GET method).
+    • There is an online form at the homepage, allowing a user to add a new book. It sends data via Ajax (POST method)
+    • When a user clicks on the book's title, the detailed book description appears.
+    • Next to the book's title there is also a "Delete" button, allowing a user to delete particular book (Ajax, DELETE method).
+
+The app consists of two elements:
+
+ 1. REST server written in Java (Jersey). Server implements a Book class, that contains: isbn, title, author, publisher and type fields. Server wasn't written by me - it was ready to be downloaded and used as a localhost.
+    The only resource exposed by this REST service is a "book", which is composed of the following data fields:
+    • id: book's id. Long type.
+    • isbn: book's isbn. String type. 
+    • title: book's title. String type. 
+    • author: book's author. String type. 
+    • publisher: book's publisher. String type.
+    • type: book's type. String type. 
+
+    Available methods:
+    • GET: /books/ - returns list of all books,
+    • GET: /books/{id} - returns particular book info,
+    • POST: /books/ - creates and saves new book based on the data provided by the user via an online form,
+    • DELETE: /books/{id} - deletes particular book.
+    • PUT: /books/{id} - changes particular book info. 
+
+ 2. Client application to be run on web browsers, described in the "How it works" section above.
+
+Used tools/frameworks: 
+    • Layout: HTML
+    • Styling: CSS/Bootstrap
+    • Scripting: Javascript
+    • Templates and event handling (because the application generates dynamic content that is inserted into an existing HTML document, and also updates this content as a response to the actions issued by the user): jQuery. 
+    • REST request management: jQuery, Ajax.
