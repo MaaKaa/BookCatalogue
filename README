@@ -1,7 +1,7 @@
 
 Frontend book catalogue app, using REST services. 
 
-How it works?
+HOW IT WORKS?
     • Client implements homepage only.
     • Homepage displays the list of all books saved in the system via Ajax (GET method).
     • There is an online form at the homepage, allowing a user to add a new book. It sends data via Ajax (POST method)
@@ -28,7 +28,7 @@ The app consists of two elements:
 
  2. Client application to be run on web browsers, described in the "How it works" section above.
 
-Used tools/frameworks: 
+USED TOOLS/FRAMEWORKS:
     • Layout: HTML
     • Styling: CSS/Bootstrap
     • Scripting: Javascript
