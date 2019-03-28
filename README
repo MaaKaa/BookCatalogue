@@ -28,6 +28,7 @@ The app consists of two elements:
 
  2. Client application to be run on web browsers, described in the "How it works" section above.
 
+***
 USED TOOLS/FRAMEWORKS:
     • Layout: HTML
     • Styling: CSS/Bootstrap
